@@ -1,0 +1,41 @@
+{
+  "name": "typescript-code-challenge-app",
+  "version": "1.0.0",
+  "description": "coding challenge for a classified game company",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts mocha.opts --timeout 5000 --exit",
+    "build" : "tsc",
+    "prod" : "node dist/entry.js",
+    "start": "ts-node src/entry.ts",
+    "dev": "nodemon --watch \"src/\"  --exec \"ts-node src/entry.ts\" -e ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasielmacedo/typescript-coding-challenge-app.git"
+  },
+  "author": "Jasiel Macedo",
+  "license": "ISC",
+  "homepage": "https://github.com/jasielmacedo/typescript-coding-challenge-app",
+  "dependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/express": "^4.17.1",
+    "@types/socket.io": "^2.1.4",
+    "@types/socket.io-client": "^1.4.32",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4",
+    "typescript-collections": "^1.3.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.1"
+  }
+}
